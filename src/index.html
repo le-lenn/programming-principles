@@ -3,18 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- chores: Update by downloading latest version from CDN. Currently used: https://cdn.tailwindcss.com/3.4.16 -->
-    <script src="vendor/tailwindcss.3.4.16.js"></script>
     <title>Programming Principles</title>
+    <meta name="description" content="A loosely ordered list of programming principles that I strive to adhere to.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Programming Principles">
+    <meta property="og:description" content="A loosely ordered list of programming principles that I strive to adhere to.">
+    <meta property="og:url" content="https://programming-principles.lenn.rocks/">
+    <link rel="icon" href="favicon.ico">
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #f8fafc;
+            color: #1e293b;
+            font: 1rem/1.5 ui-sans-serif, system-ui, sans-serif,
+                  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+
+        .container {
+            box-sizing: border-box;
+            max-width: 48rem;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        header {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 1rem;
+        }
+
+        h1 {
+            margin: 0;
+            color: #0f172a;
+            font-size: 1.875rem;
+            line-height: 1.2;
+        }
+
+        p { margin: 0; }
+        header p { margin-top: .5rem; color: #475569; }
+        ul { margin: 0; padding-left: 1.25rem; }
+        ul > li + li { margin-top: .5rem; }
+        ol { margin: .5rem 0 0; padding-left: 1.5rem; }
+        ol > li + li { margin-top: .25rem; }
+        main > p { margin-top: .25rem; }
+
+        footer {
+            margin-top: 2rem;
+            padding: 1rem 0;
+            color: #64748b;
+            text-align: center;
+            font-size: .875rem;
+            line-height: 1.25rem;
+        }
+
+        a { color: #2563eb; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-800 min-h-screen">
-    <div class="container mx-auto px-4 py-8 max-w-3xl">
-        <header class="mb-8 border-b border-slate-200 pb-4">
-            <h1 class="text-3xl font-bold text-slate-900">My Programming Principles</h1>
-            <p class="text-slate-600 mt-2">A loosely ordered list of programming principles that I strive to adhere to.</p>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Programming Principles</h1>
+            <p>A loosely ordered list of programming principles that I strive to adhere to.</p>
         </header>
-        <main class="bg-slate-50">
-            <ul class="list-disc pl-5 space-y-2 text-slate-800">
+        <main>
+            <ul>
                 <li>Write code for others.</li>
                 <li>Don't be clever. Be clear.</li>
                 <li>The best code to maintain is the one never written.</li>
@@ -28,17 +82,17 @@
                 <li>If you can do it on a single machine, do it on a single machine.</li>
                 <li>
                     Technical debt can be classified into three main types.
-                    <ol class="list-decimal pl-6 mt-2 space-y-1">
+                    <ol>
                         <li>things that are preventing you from doing stuff now</li>
                         <li>things that will prevent you from doing stuff later</li>
                         <li>things that might prevent you from doing stuff later</li>
                     </ol>
                 </li>
             </ul>
-            <div class="mt-1">Minimize having lots of stuff in 1. and try to focus on 2. Ignore 3.</div>
+            <p>Minimize having lots of stuff in 1. and try to focus on 2. Ignore 3.</p>
         </main>
-        <footer class="mt-8 text-center text-sm text-slate-500 py-4">
-            <p>Visit the <a href="https://github.com/LennardSchwarz/programming-principles" class="text-blue-600 hover:underline">Github</a> repository.</p>
+        <footer>
+            <p>Visit the <a href="https://github.com/LennardSchwarz/programming-principles">Github</a> repository.</p>
         </footer>
     </div>
 </body>
